@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
   @Input() name; // Importiere Variable aus (game.component.html)
+  @Input() playerActive: boolean = false;
   constructor() {}
   ngOnInit(): void {}
 }
